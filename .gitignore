@@ -1,0 +1,16 @@
+target
+*.log
+*.log.?
+.settings
+.project
+.classpath
+.factorypath
+.DS_Store
+*.swp
+*.pp
+rebel.xml
+bin
+dependency-reduced-pom.xml
+node_modules
+.apt_generated_tests
+.npm
