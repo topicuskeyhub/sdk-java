@@ -10,7 +10,7 @@
     <version>35</version>
   </parent>
 
-  <groupId>nl.topicus.keyhub</groupId>
+  <groupId>com.topicus-keyhub</groupId>
   <artifactId>sdk-java</artifactId>
   <version>44-SNAPSHOT</version>
 
@@ -21,6 +21,13 @@
     <name>Topicus</name>
     <url>https://topicus.nl</url>
   </organization>
+
+  <scm>
+    <url>https://github.com/topicuskeyhub/sdk-java</url>
+    <connection>scm:git:git@github.com:topicuskeyhub/sdk-java.git</connection>
+    <developerConnection>scm:git:git@github.com:topicuskeyhub/sdk-java.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -104,7 +111,7 @@
           <configuration>
             <file>openapi.json</file>
             <kiotaVersion>1.29.0</kiotaVersion>
-            <namespace>nl.topicus.keyhub.sdk</namespace>
+            <namespace>com.topicus.keyhub.sdk</namespace>
             <clientClass>KeyHubClient</clientClass>
             <serializers>com.microsoft.kiota.serialization.JsonSerializationWriterFactory</serializers>
             <deserializers>com.microsoft.kiota.serialization.JsonParseNodeFactory</deserializers>
@@ -167,6 +174,40 @@
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-gpg-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>sign-artifacts</id>
+              <phase>verify</phase>
+              <goals>
+                <goal>sign</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <configuration>
+            <minmemory>128m</minmemory>
+            <maxmemory>256m</maxmemory>
+            <quiet>true</quiet>
+            <linksource>true</linksource>
+            <failOnError>true</failOnError>
+            <doclint>all,-html,-missing</doclint>
+            <source>${maven.compiler.source}</source>
+          </configuration>
+          <executions>
+            <execution>
+              <id>attach-javadocs</id>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
           <inherited>true</inherited>
           <executions>
@@ -208,11 +249,24 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <execute>
+                      <runOnIncremental>false</runOnIncremental>
+                    </execute>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
             </lifecycleMappingMetadata>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.sonatype.central</groupId>
+          <artifactId>central-publishing-maven-plugin</artifactId>
+          <version>0.9.0</version>
+          <extensions>true</extensions>
+          <configuration>
+            <autoPublish>false</autoPublish>
+            <publishingServerId>central</publishingServerId>
+            <tokenAuth>true</tokenAuth>
           </configuration>
         </plugin>
       </plugins>
@@ -228,8 +282,26 @@
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
