@@ -1,4 +1,4 @@
-package nl.topicus.keyhub.sdk;
+package com.topicus.keyhub.sdk;
 
 import java.io.IOException;
 import java.net.URI;
