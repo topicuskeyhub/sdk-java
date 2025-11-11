@@ -8,7 +8,7 @@
   <version>44.0.1-SNAPSHOT</version>
 
   <name>sdk-java</name>
-  <description>An Java SDK for Topicus KeyHub.</description>
+  <description>A Java SDK for Topicus KeyHub.</description>
   <url>https://topicus-keyhub.com</url>
 
   <licenses>
@@ -270,8 +270,9 @@
           <version>0.9.0</version>
           <extensions>true</extensions>
           <configuration>
-            <autoPublish>false</autoPublish>
+            <autoPublish>true</autoPublish>
             <publishingServerId>central</publishingServerId>
+            <waitUntil>published</waitUntil>
           </configuration>
         </plugin>
       </plugins>
