@@ -272,7 +272,7 @@
           <configuration>
             <autoPublish>true</autoPublish>
             <publishingServerId>central</publishingServerId>
-            <waitUntil>published</waitUntil>
+            <waitUntil>validated</waitUntil>
           </configuration>
         </plugin>
       </plugins>
