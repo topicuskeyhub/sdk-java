@@ -5,7 +5,7 @@
 
   <groupId>com.topicus-keyhub</groupId>
   <artifactId>sdk-java</artifactId>
-  <version>44.0.0</version>
+  <version>44.0.1-SNAPSHOT</version>
 
   <name>sdk-java</name>
   <description>An Java SDK for Topicus KeyHub.</description>
@@ -36,12 +36,12 @@
     <url>https://github.com/topicuskeyhub/sdk-java</url>
     <connection>scm:git:git@github.com:topicuskeyhub/sdk-java.git</connection>
     <developerConnection>scm:git:git@github.com:topicuskeyhub/sdk-java.git</developerConnection>
-    <tag>sdk-java-44.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.build.outputTimestamp>2025-11-11T09:18:30Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2025-11-11T09:18:52Z</project.build.outputTimestamp>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
