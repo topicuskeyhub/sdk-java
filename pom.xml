@@ -25,13 +25,6 @@
     <url>https://topicus.nl</url>
   </organization>
 
-  <scm>
-    <url>https://github.com/topicuskeyhub/sdk-java</url>
-    <connection>scm:git:git@github.com:topicuskeyhub/sdk-java.git</connection>
-    <developerConnection>scm:git:git@github.com:topicuskeyhub/sdk-java.git</developerConnection>
-    <tag>HEAD</tag>
-  </scm>
-
   <developers>
     <developer>
       <id>team</id>
@@ -39,6 +32,13 @@
       <email>keyhub@topicus.nl</email>
     </developer>
   </developers>
+
+  <scm>
+    <url>https://github.com/topicuskeyhub/sdk-java</url>
+    <connection>scm:git:git@github.com:topicuskeyhub/sdk-java.git</connection>
+    <developerConnection>scm:git:git@github.com:topicuskeyhub/sdk-java.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
