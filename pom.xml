@@ -66,7 +66,7 @@
       <dependency>
         <groupId>com.nimbusds</groupId>
         <artifactId>oauth2-oidc-sdk</artifactId>
-        <version>11.30.1</version>
+        <version>11.32</version>
       </dependency>
       <dependency>
         <groupId>jakarta.annotation</groupId>
@@ -120,7 +120,7 @@
           </executions>
           <configuration>
             <file>openapi.json</file>
-            <kiotaVersion>1.29.0</kiotaVersion>
+            <kiotaVersion>1.30.0</kiotaVersion>
             <namespace>com.topicus.keyhub.sdk</namespace>
             <clientClass>KeyHubClient</clientClass>
             <serializers>com.microsoft.kiota.serialization.JsonSerializationWriterFactory</serializers>
