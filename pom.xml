@@ -51,22 +51,22 @@
       <dependency>
         <groupId>com.microsoft.kiota</groupId>
         <artifactId>microsoft-kiota-abstractions</artifactId>
-        <version>1.9.0</version>
+        <version>1.9.2</version>
       </dependency>
       <dependency>
         <groupId>com.microsoft.kiota</groupId>
         <artifactId>microsoft-kiota-http-okHttp</artifactId>
-        <version>1.9.0</version>
+        <version>1.9.2</version>
       </dependency>
       <dependency>
         <groupId>com.microsoft.kiota</groupId>
         <artifactId>microsoft-kiota-serialization-json</artifactId>
-        <version>1.9.0</version>
+        <version>1.9.2</version>
       </dependency>
       <dependency>
         <groupId>com.nimbusds</groupId>
         <artifactId>oauth2-oidc-sdk</artifactId>
-        <version>11.32</version>
+        <version>11.34</version>
       </dependency>
       <dependency>
         <groupId>jakarta.annotation</groupId>
@@ -166,7 +166,7 @@
             <dependency>
               <groupId>org.codehaus.mojo</groupId>
               <artifactId>extra-enforcer-rules</artifactId>
-              <version>1.11.0</version>
+              <version>1.12.0</version>
             </dependency>
             <dependency>
               <groupId>com.github.ferstl</groupId>
@@ -267,7 +267,7 @@
         <plugin>
           <groupId>org.sonatype.central</groupId>
           <artifactId>central-publishing-maven-plugin</artifactId>
-          <version>0.9.0</version>
+          <version>0.10.0</version>
           <extensions>true</extensions>
           <configuration>
             <autoPublish>true</autoPublish>
