@@ -5,7 +5,7 @@
 
   <groupId>com.topicus-keyhub</groupId>
   <artifactId>sdk-java</artifactId>
-  <version>48.0.1</version>
+  <version>48.0.2-SNAPSHOT</version>
 
   <name>sdk-java</name>
   <description>A Java SDK for Topicus KeyHub.</description>
@@ -41,7 +41,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.build.outputTimestamp>2026-05-13T12:45:44Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2026-05-13T13:15:55Z</project.build.outputTimestamp>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
