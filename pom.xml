@@ -5,7 +5,7 @@
 
   <groupId>com.topicus-keyhub</groupId>
   <artifactId>sdk-java</artifactId>
-  <version>47.0.1-SNAPSHOT</version>
+  <version>48.0.1-SNAPSHOT</version>
 
   <name>sdk-java</name>
   <description>A Java SDK for Topicus KeyHub.</description>
@@ -66,7 +66,7 @@
       <dependency>
         <groupId>com.nimbusds</groupId>
         <artifactId>oauth2-oidc-sdk</artifactId>
-        <version>11.34</version>
+        <version>11.37.1</version>
       </dependency>
       <dependency>
         <groupId>jakarta.annotation</groupId>
@@ -110,7 +110,7 @@
         <plugin>
           <groupId>io.kiota</groupId>
           <artifactId>kiota-maven-plugin</artifactId>
-          <version>0.0.31</version>
+          <version>0.0.35</version>
           <executions>
             <execution>
               <goals>
@@ -120,7 +120,7 @@
           </executions>
           <configuration>
             <file>openapi.json</file>
-            <kiotaVersion>1.30.0</kiotaVersion>
+            <kiotaVersion>1.31.1</kiotaVersion>
             <namespace>com.topicus.keyhub.sdk</namespace>
             <clientClass>KeyHubClient</clientClass>
             <serializers>com.microsoft.kiota.serialization.JsonSerializationWriterFactory</serializers>
@@ -249,7 +249,7 @@
                   <pluginExecutionFilter>
                     <groupId>io.kiota</groupId>
                     <artifactId>kiota-maven-plugin</artifactId>
-                    <versionRange>[0.0.31,)</versionRange>
+                    <versionRange>[0.0.35,)</versionRange>
                     <goals>
                       <goal>generate</goal>
                     </goals>
