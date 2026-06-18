@@ -198,7 +198,7 @@
             <maxmemory>256m</maxmemory>
             <quiet>true</quiet>
             <linksource>true</linksource>
-            <failOnError>false</failOnError>
+            <failOnError>true</failOnError>
             <doclint>all,-html,-missing</doclint>
             <source>${maven.compiler.source}</source>
           </configuration>
