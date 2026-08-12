@@ -66,7 +66,7 @@
       <dependency>
         <groupId>com.nimbusds</groupId>
         <artifactId>oauth2-oidc-sdk</artifactId>
-        <version>11.37.2</version>
+        <version>11.38.2</version>
       </dependency>
       <dependency>
         <groupId>jakarta.annotation</groupId>
@@ -110,7 +110,7 @@
         <plugin>
           <groupId>io.kiota</groupId>
           <artifactId>kiota-maven-plugin</artifactId>
-          <version>0.0.36</version>
+          <version>0.0.38</version>
           <executions>
             <execution>
               <goals>
@@ -120,7 +120,7 @@
           </executions>
           <configuration>
             <file>openapi.json</file>
-            <kiotaVersion>1.32.2</kiotaVersion>
+            <kiotaVersion>1.34.1</kiotaVersion>
             <namespace>com.topicus.keyhub.sdk</namespace>
             <clientClass>KeyHubClient</clientClass>
             <serializers>com.microsoft.kiota.serialization.JsonSerializationWriterFactory</serializers>
@@ -267,7 +267,7 @@
         <plugin>
           <groupId>org.sonatype.central</groupId>
           <artifactId>central-publishing-maven-plugin</artifactId>
-          <version>0.10.0</version>
+          <version>0.11.0</version>
           <extensions>true</extensions>
           <configuration>
             <autoPublish>true</autoPublish>
